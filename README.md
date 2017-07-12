@@ -5,29 +5,28 @@ Linux
 -----
 
 1. Install hidapi first
-   git clone git://github.com/signal11/hidapi.git
-   sudo apt-get install libudev-dev libusb-1.0-0-dev libfox-1.6-dev
-   sudo apt-get install autotools-dev autoconf automake libtool
+2.  git clone git://github.com/signal11/hidapi.git
+3.  sudo apt-get install libudev-dev libusb-1.0-0-dev libfox-1.6-dev
+4.  sudo apt-get install autotools-dev autoconf automake libtool
+5.  ./bootstrap
+6    ./configure --enable-testgui --prefix=/usr    
+7.   make
+8.   sudo make install
+9.   sudo apt-get install tcl
+10.  sudo apt-get install tcl-dev
+11.  sudo apt-get install swig
+12.   sudo ./build
 
-	./bootstrap
-	
-	./configure --enable-testgui --prefix=/usr <- change fodler as needed
-	                             this will affect if you need to update /etc/ld.so.conf.d/.conf later on
-				     
-	make
-	
-	sudo make install
-	
-2. then sudo ./build
-3. If you hit a problem to load hidapi_libusb.so.0 
+   If you hit a problem to load hidapi_libusb.so.0 
    export LD_LIBRARY_PATH=<path to libhidapi_libusb.so.0>:$LD_LIBRARY_PATH
    libhidapi_libusb.so.0 should be installed in /usr/local.lib
    or
    sudo nano /etc/ld.so.conf.d/.conf and add /usr/local/lib
-4. Run tclsh hidtest.tcl 
+   
+14. Run tclsh hidtest.tcl 
 
-5. Consider adding /etc/udev/rules.d/10-hftlite.rules
-   KERNEL="hidraw",SUBSYSTEM="hidraw", MODE="666", GROUP="plugdev"
+15. Consider adding /etc/udev/rules.d/10-hftlite.rules
+    KERNEL="hidraw",SUBSYSTEM="hidraw", MODE="666", GROUP="plugdev"
    
 Windows
 -------
