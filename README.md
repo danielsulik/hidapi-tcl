@@ -10,7 +10,7 @@ Linux
    sudo apt-get install autotools-dev autoconf automake libtool
 
 	./bootstrap
-	./configure --enable-testgui --prefix=/usr <- chnage fodler as needed
+	./configure --enable-testgui --prefix=/usr <- change fodler as needed
 	                             this will affect if you need to update /etc/ld.so.conf.d/.conf later on
 	make
 	sudo make install
