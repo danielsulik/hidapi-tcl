@@ -15,7 +15,7 @@ Linux
 9.   sudo apt-get install tcl
 10.  sudo apt-get install tcl-dev
 11.  sudo apt-get install swig
-12.   sudo ./build
+12.  sudo ./build
 
    If you hit a problem to load hidapi_libusb.so.0 
    export LD_LIBRARY_PATH=<path to libhidapi_libusb.so.0>:$LD_LIBRARY_PATH
@@ -23,9 +23,9 @@ Linux
    or
    sudo nano /etc/ld.so.conf.d/.conf and add /usr/local/lib
    
-14. Run tclsh hidtest.tcl 
+13. Run tclsh hidtest.tcl 
 
-15. Consider adding /etc/udev/rules.d/10-hftlite.rules
+14. Consider adding /etc/udev/rules.d/10-hftlite.rules
     KERNEL="hidraw",SUBSYSTEM="hidraw", MODE="666", GROUP="plugdev"
    
 Windows
