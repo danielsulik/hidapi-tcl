@@ -1,5 +1,5 @@
 # hidapi-tcl
-piogpio port to tcl
+hidapi port to tcl
 
 Linux
 -----
