@@ -1,0 +1,1 @@
+package provide hidapi_tcl 1.0

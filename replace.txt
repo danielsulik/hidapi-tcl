@@ -1,0 +1,9 @@
+hid_enumerate
+hid_write
+hid_read
+hid_read_timeout
+hid_send_feature_report
+hid_get_feature_report
+hid_get_manufacturer_string
+hid_get_product_string
+hid_get_serial_number_string
