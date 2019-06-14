@@ -15,7 +15,7 @@ Linux
 9.  sudo apt-get install tcl
 10. sudo apt-get install tcl-dev
 11. sudo apt-get install swig
-12. sudo ./build
+12. then cd to hidapi-tcl and type sudo ./build
 
    If you hit a problem to load hidapi_libusb.so.0 
    export LD_LIBRARY_PATH=<path to libhidapi_libusb.so.0>:$LD_LIBRARY_PATH
