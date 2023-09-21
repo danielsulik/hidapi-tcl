@@ -10,7 +10,7 @@ Linux
 4. sudo apt-get install autotools-dev autoconf automake libtool
 5. \./bootstrap
 6. sudo \./configure --enable-testgui --prefix=/usr    
-7.  make
+7.  sudo make
 8.  sudo make install
 9.  sudo apt-get install tcl
 10. sudo apt-get install tcl-dev
