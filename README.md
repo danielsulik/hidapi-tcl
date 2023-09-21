@@ -13,7 +13,7 @@ Linux
 7.  sudo make
 8.  sudo make install
 9.  sudo apt-get install tcl
-10. sudo apt-get install tcl-dev
+10. sudo apt-get install tcl-dev tclx
 11. sudo apt-get install swig
 12. cd hidapi-tcl; sudo ./build
 
