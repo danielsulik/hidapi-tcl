@@ -12,7 +12,7 @@ _wrap_hid_get_manufacturer_string(ClientData clientData SWIGUNUSED, Tcl_Interp *
   arg1 = (hid_device *)(argp1);
 
   wchar_t TmpStr1[128];
-  char TmpStr2[128];
+  char TmpStr2[4096];
   char * res = (char*) Tcl_Alloc (128);
   res[0] = 0;
   Tcl_SetResult  (interp, res, TCL_DYNAMIC);
